@@ -5,20 +5,20 @@
 :construction: Spring-boot mysql and docker.. :construction:
 </h4>
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/engailtonoliveira/spring-boot-mysql-docke?color=%2304D361">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/engailtonoliveira/spring-boot-mysql-docker?color=%2304D361">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/engailtonoliveira/spring-boot-mysql-docke">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/engailtonoliveira/spring-boot-mysql-docker">
 	
   <a href="https://www.linkedin.com/in/ailton-oliveira-127366126/">
     <img alt="Made by Ailton Oliveira" src="https://img.shields.io/badge/made%20by-engailtonoliveira-%2304D361">
   </a>
 
-  <a href="https://github.com/engailtonoliveira/be-the-hero/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/engailtonoliveira/spring-boot-mysql-docke">
+  <a href="https://github.com/engailtonoliveira/spring-boot-mysql-docker/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/engailtonoliveira/spring-boot-mysql-docker">
   </a>
 
-  <a href="https://github.com/engailtonoliveira/be-the-hero/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/engailtonoliveira/spring-boot-mysql-docke">
+  <a href="https://github.com/engailtonoliveira/spring-boot-mysql-docker/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/engailtonoliveira/spring-boot-mysql-docker">
   </a>
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 </p>
@@ -27,7 +27,6 @@
   <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-arquitecture">Architecture</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-isntalation">Intalation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-license">License</a>
 </p>
 
 ## 💻 Project
@@ -38,7 +37,7 @@ I can say that the project includes an example of how to develop a safe and func
 ## Technologies
 
 This project was developed with the following technologies:
-- [Java 11] (https://docs.oracle.com/en/java/)
+- [Java 11](https://docs.oracle.com/en/java/)
 - [Sprring](https://spring.io/)
 - [MySql](https://www.mysql.com/)
 - [Docker](https://www.docker.com/)
@@ -50,8 +49,8 @@ The spring boot architecture flow
 
 ### Database
 The Database Model
-![Model Entity Relationship](MER.png)
- The database structer file is `engailtonoliveira/spring-boot-mysql-dockerup_vote_db_bk.sql`
+![Model Entity Relationship](MER.PNG)
+ The database structer file is `engailtonoliveira/spring-boot-mysql-docker/up_vote_db_bk.sql`
 
 ## Instalation
 To execute the repository first downloat for your machine or do the  `Git Clone`
@@ -62,7 +61,7 @@ To execute the repository first downloat for your machine or do the  `Git Clone`
 - last open your terminal and type `docker-compose up --build --force-recreate` 
 
 #### Usage
-One the docker is running, open the Postman collection and you will be able to send/recive API request. 
+One the docker is running, open the Postman collection `engailtonoliveira/spring-boot-mysql-docker\post-upvote.postman_collection.json` and you will be able to send/recive API request. 
 Several example requests are provided in the collection. Below is a screenshot of a Postman example.
 ![Postman screenshot](postman.png)
 
@@ -77,8 +76,6 @@ Obs: have other enpoinds configured, feel free to test
 ### Frontend
 Unbelievably it will be as future work
 
-## Licennse
-This project is under the MIT license. See the [LICENSE](LICENSE.md) for details.
 ---
 
 Made with ♥ by Ailton Oliveira :wave: [Get in touch!](https://www.linkedin.com/in/ailton-oliveira-127366126/)
