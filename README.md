@@ -2,25 +2,12 @@
     Up-Vote
 </h1>
 <h4 align="center"> 
-:construction: Spring-boot mysql and docker.. :construction:
-</h4>
-<p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/engailtonoliveira/spring-boot-mysql-docker?color=%2304D361">
-
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/engailtonoliveira/spring-boot-mysql-docker">
-	
-  <a href="https://www.linkedin.com/in/ailton-oliveira-127366126/">
-    <img alt="Made by Ailton Oliveira" src="https://img.shields.io/badge/made%20by-engailtonoliveira-%2304D361">
-  </a>
-
+:construction: Spring-boot mysql and docker.. :construction: 
   <a href="https://github.com/engailtonoliveira/spring-boot-mysql-docker/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/engailtonoliveira/spring-boot-mysql-docker">
   </a>
+</h4>
 
-  <a href="https://github.com/engailtonoliveira/spring-boot-mysql-docker/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/engailtonoliveira/spring-boot-mysql-docker">
-  </a>
-</p>
 <p align="center">
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
