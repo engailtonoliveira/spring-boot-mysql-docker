@@ -1,0 +1,358 @@
+{
+	"info": {
+		"_postman_id": "7aa13ee1-2e66-448f-aee0-9b14116c3440",
+		"name": "post-upvote",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AuthController",
+			"item": [
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Rafael Rodrigues Ferro Oliveira\",\r\n    \"username\": \"roliveira\",\r\n    \"email\": \"test@gmail.com\",\r\n    \"password\": \"pass!31\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/auth/signup",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usernameOrEmail\": \"roliveira\",\r\n    \"password\": \"pass!31\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/auth/signin",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PostController",
+			"item": [
+				{
+					"name": "createPost",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMiIsImlhdCI6MTYyNDg0ODkwMywiZXhwIjoxNjI1NDUzNzAzfQ.9fz2tvWQ7XNNqYOUmvDMIlARa8lhjAPqdiWPrd27s8Kpw3-F0fIxSZAS_6RoQpRXpFJBwH48yS3ZgKItBvbMyA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"question\": \"Just test agcdsxgs shcbs?\",\r\n    \"choices\": [\r\n        {\r\n            \"text\": \"test\"\r\n        },\r\n        {\r\n            \"text\": \"fould\"\r\n        }\r\n    ],\r\n    \"postLength\": {\r\n        \"days\": 3,\r\n        \"hours\": 4\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/posts",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "castVote",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMiIsImlhdCI6MTYyNDg0ODkwMywiZXhwIjoxNjI1NDUzNzAzfQ.9fz2tvWQ7XNNqYOUmvDMIlARa8lhjAPqdiWPrd27s8Kpw3-F0fIxSZAS_6RoQpRXpFJBwH48yS3ZgKItBvbMyA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"choiceId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/posts/:postId/votes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"posts",
+								":postId",
+								"votes"
+							],
+							"variable": [
+								{
+									"key": "postId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPostById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMiIsImlhdCI6MTYyNDg0ODkwMywiZXhwIjoxNjI1NDUzNzAzfQ.9fz2tvWQ7XNNqYOUmvDMIlARa8lhjAPqdiWPrd27s8Kpw3-F0fIxSZAS_6RoQpRXpFJBwH48yS3ZgKItBvbMyA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"question\": \"Just test agcdsxgs shcbs?\",\r\n    \"choices\": [\r\n        {\r\n            \"text\": \"test\"\r\n        },\r\n        {\r\n            \"text\": \"fould\"\r\n        }\r\n    ],\r\n    \"postLength\": {\r\n        \"days\": 3,\r\n        \"hours\": 4\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/posts/:postId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"posts",
+								":postId"
+							],
+							"variable": [
+								{
+									"key": "postId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UserControler",
+			"item": [
+				{
+					"name": "getCurrentUser",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMiIsImlhdCI6MTYyNDgyOTE3NiwiZXhwIjoxNjI1NDMzOTc2fQ.9QTS1i6mJwx1Ex2lllMUnOjxMmE-evLjrb9nKrRwhrlUgNzqlCdYwV_jqOJ4GyFabGzl3Jd71ZTDLK1ci2S4Eg",
+								"type": "text"
+							},
+							{
+								"key": "tokenType",
+								"value": "Bearer",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/user/me",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "checkUsernameAvailability",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/user/checkUsernameAvailability?username=roliveira",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"checkUsernameAvailability"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "roliveira"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "checkEmailAvailability",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMiIsImlhdCI6MTYyNDgyOTE3NiwiZXhwIjoxNjI1NDMzOTc2fQ.9QTS1i6mJwx1Ex2lllMUnOjxMmE-evLjrb9nKrRwhrlUgNzqlCdYwV_jqOJ4GyFabGzl3Jd71ZTDLK1ci2S4Eg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/user/checkEmailAvailability?email=test@gmail.com",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"checkEmailAvailability"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "test@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUserProfile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMiIsImlhdCI6MTYyNDgyOTE3NiwiZXhwIjoxNjI1NDMzOTc2fQ.9QTS1i6mJwx1Ex2lllMUnOjxMmE-evLjrb9nKrRwhrlUgNzqlCdYwV_jqOJ4GyFabGzl3Jd71ZTDLK1ci2S4Eg",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/users/:username",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "roliveira"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPostsVotedBy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMiIsImlhdCI6MTYyNDg0ODkwMywiZXhwIjoxNjI1NDUzNzAzfQ.9fz2tvWQ7XNNqYOUmvDMIlARa8lhjAPqdiWPrd27s8Kpw3-F0fIxSZAS_6RoQpRXpFJBwH48yS3ZgKItBvbMyA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/users/:username/votes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								":username",
+								"votes"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "roliveira"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
