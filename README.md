@@ -20,7 +20,6 @@
   <a href="https://github.com/engailtonoliveira/spring-boot-mysql-docker/issues">
     <img alt="Repository issues" src="https://img.shields.io/github/issues/engailtonoliveira/spring-boot-mysql-docker">
   </a>
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 </p>
 <p align="center">
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -56,9 +55,10 @@ The Database Model
 To execute the repository first downloat for your machine or do the  `Git Clone`
 
 ### Backend 
-- open the folder `spring-boot-mysql-docke/` on your IntelliJ
+- open the folder `spring-boot-com-mysql/` on your IntelliJ
 - go to the right panel and open `Maven Project`in Livecycle select `clean` and `install` than click in `Run Maven build`
 - last open your terminal and type `docker-compose up --build --force-recreate` 
+- run database script `up_vote_db_bk.sql` for create structer database (obs: it is a temporary solution later i will use the generated database)
 
 #### Usage
 One the docker is running, open the Postman collection `engailtonoliveira/spring-boot-mysql-docker\post-upvote.postman_collection.json` and you will be able to send/recive API request. 
