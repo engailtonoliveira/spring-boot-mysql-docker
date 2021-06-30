@@ -12,7 +12,7 @@
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-arquitecture">Architecture</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-isntalation">Intalation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-isntalation">Instalation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
 ## 💻 Project
@@ -24,7 +24,7 @@ I can say that the project includes an example of how to develop a safe and func
 
 This project was developed with the following technologies:
 - [Java 11](https://docs.oracle.com/en/java/)
-- [Sprring](https://spring.io/)
+- [Spring](https://spring.io/)
 - [MySql](https://www.mysql.com/)
 - [Docker](https://www.docker.com/)
 
@@ -39,13 +39,13 @@ The Database Model
  The database structer file is `engailtonoliveira/spring-boot-mysql-docker/up_vote_db_bk.sql`
 
 ## Instalation
-To execute the repository first downloat for your machine or do the  `Git Clone`
+To execute the repository first download for your machine or do the  `Git Clone`
 
 ### Backend 
 - open the folder `spring-boot-com-mysql/` on your IntelliJ
 - go to the right panel and open `Maven Project`in Livecycle select `clean` and `install` than click in `Run Maven build`
 - last open your terminal and type `docker-compose up --build --force-recreate` 
-- run database script `up_vote_db_bk.sql` for create structer database (obs: it is a temporary solution later i will use the generated database)
+- run database script `up_vote_db_bk.sql` for create structer database (obs: it's a temporary solution later i will use the generated database)
 
 #### Usage
 One the docker is running, open the Postman collection `engailtonoliveira/spring-boot-mysql-docker\post-upvote.postman_collection.json` and you will be able to send/recive API request. 
